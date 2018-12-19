@@ -27,7 +27,7 @@ app.get('/buscar', (req, res) => {
     });
   })
 
-  app.post('/conexionBD-node/borrardatos',(req, res) =>{
+  app.post('borrardatos/',(req, res) =>{
     let id = req.body.id;
     buscar.delete(function(error){
         if(error)
