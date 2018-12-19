@@ -16,6 +16,7 @@ exports.select = function(cb)
 
 exports.delete = function(cb, id)
 {
+    console.log("entro en borrar");
     var valor;
     bd.query("delete from tablaPrueba where id = " + id, function(error,filas){
 
