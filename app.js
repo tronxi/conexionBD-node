@@ -36,7 +36,7 @@ app.get('//buscar', (req, res) => {
         }
         else
         {
-            res.end();
+            res.redirect('//index.html');
         }
     }, id);
     });
