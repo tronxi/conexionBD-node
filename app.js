@@ -8,7 +8,7 @@ buscar = require('./node/buscar.js');
 
 app.use(express.static(__dirname));
 
-app.get('/buscar', (req, res) => {
+app.get('//buscar', (req, res) => {
     buscar.select(function(error, resultado)
     {
         if(error)
