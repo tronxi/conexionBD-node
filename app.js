@@ -36,7 +36,7 @@ app.get('//buscar', (req, res) => {
         }
         else
         {
-            res.redirect('//index.html');
+            res.redirect('/conexionBD-node/index.html');
         }
     }, id);
     });
