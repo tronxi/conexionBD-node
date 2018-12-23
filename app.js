@@ -42,7 +42,7 @@ app.get('//buscar', (req, res) => {
     });
     app.post('//insertarDatos',(req, res) =>{
         let id = req.body.nombre;
-        buscar.delete(function(error){
+        buscar.insertar(function(error){
             if(error)
             {
                 throw error;
