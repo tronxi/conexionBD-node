@@ -30,8 +30,10 @@ exports.delete = function(cb, id)
 
 exports.insertar = function(cb, id)
 {
-    var valor;
-    bd.query("insert into tablaPrueba (nombre) values (" + id + ")", function(error,filas){
+    var qr = "insert into tablaPrueba (nombre) values (";
+    qr += id;
+    qr += ")";
+    bd.query(qr, function(error){
 
         if (error) {            
             console.log('error al insertar');

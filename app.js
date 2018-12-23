@@ -40,6 +40,7 @@ app.get('//buscar', (req, res) => {
         }
     }, id);
     });
+
     app.post('//insertarDatos',(req, res) =>{
         let id = req.body.nombre;
         buscar.insertar(function(error){
@@ -53,6 +54,7 @@ app.get('//buscar', (req, res) => {
             }
         }, id);
         });
+        
 const server=app.listen(8888, () => {
   console.log('Servidor web iniciado');
 });

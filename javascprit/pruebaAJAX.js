@@ -9,7 +9,6 @@ function mostrarDatos(e)
 {
 //  e.preventDefault();
   var url = mostrar.getAttribute('name');
-  console.log(url);
   cargarDatos(url);
 }
 
