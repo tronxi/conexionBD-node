@@ -30,9 +30,9 @@ exports.delete = function(cb, id)
 
 exports.insertar = function(cb, id)
 {
-    var qr = "insert into tablaPrueba (nombre) values (";
+    var qr = "insert into tablaPrueba (nombre) values ('";
     qr += id;
-    qr += ")";
+    qr += "')";
     bd.query(qr, function(error){
 
         if (error) {            
