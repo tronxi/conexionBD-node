@@ -41,8 +41,7 @@ app.get('//buscar', (req, res) => {
         }
         else
         {
-            console.log(id);
-            //res.redirect('/conexionBD-node/index.html');
+            res.redirect('/conexionBD-node/index.html');
         }
     }, id);
     });
