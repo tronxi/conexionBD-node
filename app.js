@@ -27,7 +27,7 @@ app.get('//buscar', (req, res) => {
             {
                 valor += " " + resultado[i].id + " " + resultado[i].nombre + "<br>";
             }
-            res.send(valor);
+            res.send(JSON.stringify(resultado));
         }
     });
   })
