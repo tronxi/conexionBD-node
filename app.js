@@ -32,8 +32,8 @@ app.get('//buscar', (req, res) => {
     });
   })
 
-  app.post('//borrardatos',(req, res) =>{
-    let id = req.body.id;
+  app.delete('//borrardatos/:id',(req, res) =>{
+    let id = req.params.id;
     buscar.delete(function(error){
         if(error)
         {
