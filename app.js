@@ -11,7 +11,10 @@ app.use(express.static(__dirname));
 var cors = require('cors')
  
 app.use(cors())
-
+app.get('//', (req, res) => 
+{
+    res.send('Servidor BD funcionando');
+});
 app.get('//buscar', (req, res) => {
 
     buscar.select(function(error, resultado)
